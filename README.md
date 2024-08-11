@@ -1,2 +1,2 @@
 # resume
-My personal portfolio for resume applications
+My personal portfolio
