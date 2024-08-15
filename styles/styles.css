@@ -1,0 +1,176 @@
+body {
+    margin: 2% auto;
+    max-width: 1000px;
+}
+nav {
+    display: flex;
+    margin-left: 2%;
+    width: 50%;
+    align-self: baseline;
+}
+
+h1 {
+    margin: 1.5rem 0 0 0;
+    width: 100%;
+    font-size: 3rem;
+}
+
+h2 {
+    margin-left: 1%;
+}
+
+h3 {
+    margin-left: 2%;
+}
+
+nav p {
+    text-indent: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    text-indent: 3rem;
+}
+
+.header {
+    position: sticky;
+    display: flex;
+    padding: 1rem;
+}
+
+#left-header {
+    flex-direction: column;
+    width: 50%;
+}
+
+#right-header {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.links {
+    top: 2%;
+    right: 2%;
+    text-align: right;
+    padding-right: 1%;
+}
+
+.links p {
+    font-size: 1.5rem;
+}
+
+.links a:hover {
+    font-weight: bold;
+}
+
+.links a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.links a:visited {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+#about {
+    margin-top: 4%;
+    font-size: 1.5rem;
+}
+
+.animatedParagraph {
+    margin-left: 1%;
+}
+
+#skills {
+    margin-top: 4%;
+    font-size: 1.5rem;
+}
+
+#projects {
+    margin-top: 8%;
+    font-size: 1.5rem;
+}
+
+#resume {
+    margin-top: 8%;
+    font-size: 1.5rem;
+}
+
+#resume-heading {
+    display: flex;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);    /* 4 rows */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 10px; /* Optional: Add some space between the grid items */
+}
+
+.grid-item {
+    margin-left: 10%;
+    border-left-style: solid;
+    padding-left: 3%;
+    font-size: 1.5rem;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#download {
+    background-color: white;
+    padding: 1% 1.2%;
+    margin-left: 1%;
+    font-size: 1.5rem;
+    border: solid;
+}
+
+#download:hover {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1% 0.7%;
+    box-shadow: 1px 2px 2px;
+}
+
+/*
+ <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 700
+ */
+
+.roboto-mono-regular {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-mono-bold {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+  

@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nic's Portfolio</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="./scripts/typeWriter.js"></script>
+    <title>Nicolaas Kouwenhoven</title>
 </head>
 <body>
-    <div>Hello! This is my future portfolio</div>
+    <div class="header">
+        <div id="left-header">
+            <h1 class="heading">Nicolaas Kouwenhoven</h1>
+            <nav>
+                <p><a href="#about">About</a></p>
+                <p>/</p>
+                <p><a href="#skills">Skills</a></p>
+                <p>/</p>
+                <p><a href="#projects">Projects</a></p>
+                <p>/</p>
+                <p><a href="#resume">Resume</a></p>
+            </nav>
+        </div>
+        <div id="right-header">
+            <div class="links">
+                <p id="email"><a href="mailto:nic.kouwen@gmail.com">nic.kouwen@gmail.com</a></p>
+                <p id ="linkedin"><a target="_blank" href="https://www.linkedin.com/in/nic-kouwenhoven-585670262/">Linkedin</a></p>
+                <p id="github"><a target="_blank" href="https://github.com/nickouwen">Github</a></p>
+            </div>
+        </div>
+    </div>
+    <div id='about'>
+        <h2 class="heading">About</h2>
+        <p class="animatedParagraph hidden">
+            Hey, my name is Nicolaas Kouwenhoven. I am currently a fourth-year Computer Science student at the University of British Columbia's Okanagan campus. 
+        </p>
+        <p class="animatedParagraph hidden">
+            I am currently interested in learning about machine learning techniques, backend web services and game development, though I am open to learning about any and all techniques / technologies.
+        </p>
+    </div>
+    <div id='skills'>
+        <h2 class="heading">Skills</h2>
+        <div class="grid-container">
+            <div class="grid-item">Java</div>
+            <div class="grid-item">MySQL</div>
+            <div class="grid-item">ReactJS</div>
+            <div class="grid-item">Docker</div>
+            <div class="grid-item">Javascript</div>
+            <div class="grid-item">PostgreSQL</div>
+            <div class="grid-item">NodeJS</div>
+            <div class="grid-item">Git</div>
+            <div class="grid-item">Python</div>
+            <div class="grid-item">Flask</div>
+            <div class="grid-item">R</div>
+            <div class="grid-item">Postman</div>
+            <div class="grid-item">PHP</div>
+            <div class="grid-item">Express</div>
+            <div class="grid-item">OpenCV</div>
+            <div class="grid-item">Github Actions</div>
+        </div>
+    </div>
+    <div id='projects'>
+        <h2 class="heading">Projects</h2>
+        <h3 class="heading">Optical Marking Recognition Software</h3>
+        <h3 class="heading">Product Price Tracker</h3>
+        <h3 class="heading">Canada-Wide Water Level Monitoring System</h3>
+    </div>
+    <div id='resume'>
+        <h2 class="heading">Resume</h2>
+        <a id='download' href="public/Resume_Nicolaas_Kouwenhoven.pdf" download>Download My Resume</a>
+        <div id="img-container">
+            <img id='resume' src="public/NicolaasKouwenhovenResume.jpg" alt="My Resume" width="950px">
+        </div>
+    </div>
 </body>
+<script src="scripts/scripts.js"></script>
 </html>
