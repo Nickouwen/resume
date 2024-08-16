@@ -77,6 +77,14 @@ a:hover {
     font-weight: bold;
 }
 
+a img {
+    width: 10%;
+}
+
+a img:hover {
+    transform: scale(1.25);
+}
+
 #about {
     margin-top: 4%;
     font-size: 1.5rem;
@@ -282,7 +290,11 @@ a:hover {
     }
 
     .links {
-        text-align: center;
+        text-align: right;
+    }
+
+    a img {
+        width: 30%;
     }
 
     #email {
@@ -291,5 +303,9 @@ a:hover {
 
     nav p {
         text-indent: 0.5rem;
+    }
+
+    #left-header {
+        width: 75%;
     }
 }
