@@ -39,7 +39,6 @@ p {
 }
 
 .header {
-    position: sticky;
     display: flex;
     padding: 1rem;
 }
@@ -181,6 +180,11 @@ a:hover {
     font-size: 1.5rem;
 }
 
+#resume-img {
+    width: 950px;
+    margin-top: 2%;
+}
+
 #resume-heading {
     display: flex;
     width: 100%;
@@ -230,4 +234,62 @@ a:hover {
     font-weight: 700;
     font-style: normal;
 }
-  
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0 2%;
+    }
+
+    h1, h2, h3{
+        font-size: x-large;
+    }
+
+    p {
+        font-size: large;
+        text-indent: 0.75rem;
+    }
+
+    .links {
+        p {
+            font-size: large;
+        }
+    }
+
+    #skills {
+        font-size: 1rem;
+        .grid-container .grid-item {
+            font-size: 1rem;
+            align-content: center;
+        }
+    }
+
+    #projects {
+        .grid-container .grid-item {
+            width: 48%;
+        }
+    }
+
+    #resume {
+        margin-bottom: 4%;
+    }
+
+    #download {
+        font-size: 1rem;
+    }
+
+    #resume-img {
+        display: none;
+    }
+
+    .links {
+        text-align: center;
+    }
+
+    #email {
+        display: none;
+    }
+
+    nav p {
+        text-indent: 0.5rem;
+    }
+}
