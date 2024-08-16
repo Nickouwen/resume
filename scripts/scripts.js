@@ -47,13 +47,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 const closeImage = () => {
     overlay = document.getElementById('enlarged-img');
     overlay.setAttribute('style', 'display: none;');
-}
+};
 
 const openImage = (image) => {
     overlay = document.getElementById('enlarged-img');
     overlay.setAttribute('style', 'display: flex;');
     overlay.children[1].setAttribute('src', image);
-}
+};
