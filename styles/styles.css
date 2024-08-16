@@ -170,6 +170,12 @@ a:hover {
     }
 }
 
+.caption {
+    text-indent: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
 #resume {
     margin-top: 8%;
     font-size: 1.5rem;
