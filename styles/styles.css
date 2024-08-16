@@ -269,7 +269,7 @@ a img:hover {
     #projects {
         margin: 0 2%;
         .grid-container .grid-item {
-            width: 48%;
+            width: 47%;
         }
     }
 
