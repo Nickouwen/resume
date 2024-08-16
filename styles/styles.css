@@ -259,6 +259,7 @@ a img:hover {
     }
 
     #skills {
+        margin-right: 1%;
         font-size: 1rem;
         .grid-container .grid-item {
             font-size: 0.8rem;
