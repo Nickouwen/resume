@@ -46,3 +46,14 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(heading);
     });
 });
+
+const closeImage = () => {
+    overlay = document.getElementById('enlarged-img');
+    overlay.setAttribute('style', 'display: none;');
+}
+
+const openImage = (image) => {
+    overlay = document.getElementById('enlarged-img');
+    overlay.setAttribute('style', 'display: flex;');
+    overlay.children[1].setAttribute('src', image);
+}

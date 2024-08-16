@@ -7,10 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <script src="./scripts/typeWriter.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Nicolaas Kouwenhoven</title>
 </head>
 <body>
+    <div id="enlarged-img" onclick="closeImage()">
+        <button id="close" onclick="closeImage()"><i class="fa fa-close"></i></button>
+        <img id="large-screenshot" src="" alt="Enlarged Screenshot">
+    </div>
+    <div id="container">
     <div class="header">
         <div id="left-header">
             <h1 class="heading">Nicolaas Kouwenhoven</h1>
@@ -65,14 +70,19 @@
     <div id='projects'>
         <h2 class="heading">Projects</h2>
         <h3 class="heading">Optical Marking Recognition Software</h3>
-        <div class="carousel-container">
-            <div class="carousel-image">
-                <div class="imagenum">1/7</div>
-                <img src="./public/OpticalMarking1.png">
-                <div class="carousel-caption">Caption Text</div>
-            </div>
+        <div class="grid-container">
+            <img class="grid-item" src="public/OpticalMarking1.png" alt="Optical Marking Screenshot 1" onclick="openImage('public/OpticalMarking1.png')">
+            <img class="grid-item" src="public/OpticalMarking2.png" alt="Optical Marking Screenshot 2" onclick="openImage('public/OpticalMarking2.png')">
+            <img class="grid-item" src="public/OpticalMarking3.png" alt="Optical Marking Screenshot 3" onclick="openImage('public/OpticalMarking3.png')">
+            <img class="grid-item" src="public/OpticalMarking4.png" alt="Optical Marking Screenshot 4" onclick="openImage('public/OpticalMarking4.png')">
+            <img class="grid-item" src="public/OpticalMarking5.png" alt="Optical Marking Screenshot 5" onclick="openImage('public/OpticalMarking5.png')">
+            <img class="grid-item" src="public/OpticalMarking6.png" alt="Optical Marking Screenshot 6" onclick="openImage('public/OpticalMarking6.png')">
         </div>
         <h3 class="heading">Product Price Tracker</h3>
+            <div class="img-container">
+                <img class="image" src="public/PriceChecker1.png" alt="Price Checker Screenshot 1" onclick="openImage('public/PriceChecker1.png')">
+                <img class="image" src="public/PriceChecker2.png" alt="Price Checker Screenshot 1" onclick="openImage('public/PriceChecker2.png')">
+            </div>
         <h3 class="heading">Canada-Wide Water Level Monitoring System</h3>
     </div>
     <div id='resume'>
@@ -81,6 +91,7 @@
         <div id="img-container">
             <img id='resume' src="public/NicolaasKouwenhovenResume.jpg" alt="My Resume" width="950px">
         </div>
+    </div>
     </div>
 </body>
 <script src="scripts/scripts.js"></script>
