@@ -261,7 +261,7 @@ a img:hover {
     #skills {
         font-size: 1rem;
         .grid-container .grid-item {
-            font-size: 1rem;
+            font-size: 0.8rem;
             align-content: center;
         }
     }
