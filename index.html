@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script defer src="/_vercel/insights/script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,27 +74,35 @@
     </div>
     <div id='projects'>
         <h2 class="heading">Projects</h2>
+        <a href="https://recipes.nickouwen.dev"><h3 class="heading">Family Recipes Website</h3></a>
+        <a target="_blank" href="https://recipes.nickouwen.dev">Live Link</a>
+        <br>
+        <a target="_blank" href="https://github.com/Nickouwen/website">Github Link</a>
+        <div class="grid-container">
+            <img class="grid-item no-border" src="public/Recipe1.png" alt="Family Recipes Screenshot 1" onclick="openImage('Recipe1.png')">
+            <img class="grid-item no-border" src="public/Recipe2.png" alt="Family Recipes Screenshot 2" onclick="openImage('Recipe2.png')">
+            <img class="grid-item no-border" src="public/Recipe3.png" alt="Family Recipes Screenshot 3" onclick="openImage('Recipe3.png')">
+            <img class="grid-item no-border" src="public/Recipe4.png" alt="Family Recipes Screenshot 4" onclick="openImage('Recipe4.png')">
+        </div>
+        <p class="caption">A family recipes website that allows users to create, view, update and delete recipes. This was made to modernize my family's recipe book and allow anyone to access them.<br><span style="font-weight: bold;">Tech stack: React-Go-MongoDB, hosted on Vercel / Google Cloud Run / Mongo Atlas</span></p>
+
         <h3 class="heading">Optical Marking Recognition Software</h3> <a target="_blank" href="https://github.com/UBCO-COSC499-Summer-2024/team-5-capstone-team-5">Github Link</a>
         <div class="grid-container">
-            <img class="grid-item" src="public/OpticalMarking1.png" alt="Optical Marking Screenshot 1" onclick="openImage('public/OpticalMarking1.png')">
-            <img class="grid-item" src="public/OpticalMarking2.png" alt="Optical Marking Screenshot 2" onclick="openImage('public/OpticalMarking2.png')">
-            <img class="grid-item" src="public/OpticalMarking3.png" alt="Optical Marking Screenshot 3" onclick="openImage('public/OpticalMarking3.png')">
-            <img class="grid-item" src="public/OpticalMarking4.png" alt="Optical Marking Screenshot 4" onclick="openImage('public/OpticalMarking4.png')">
-            <img class="grid-item" src="public/OpticalMarking5.png" alt="Optical Marking Screenshot 5" onclick="openImage('public/OpticalMarking5.png')">
-            <img class="grid-item" src="public/OpticalMarking6.png" alt="Optical Marking Screenshot 6" onclick="openImage('public/OpticalMarking6.png')">
+            <img class="grid-item" src="public/OpticalMarking1.png" alt="Optical Marking Screenshot 1" onclick="openImage('OpticalMarking1.png')">
+            <img class="grid-item" src="public/OpticalMarking2.png" alt="Optical Marking Screenshot 2" onclick="openImage('OpticalMarking2.png')">
+            <img class="grid-item" src="public/OpticalMarking3.png" alt="Optical Marking Screenshot 3" onclick="openImage('OpticalMarking3.png')">
+            <img class="grid-item" src="public/OpticalMarking4.png" alt="Optical Marking Screenshot 4" onclick="openImage('OpticalMarking4.png')">
+            <img class="grid-item" src="public/OpticalMarking5.png" alt="Optical Marking Screenshot 5" onclick="openImage('OpticalMarking5.png')">
+            <img class="grid-item" src="public/OpticalMarking6.png" alt="Optical Marking Screenshot 6" onclick="openImage('OpticalMarking6.png')">
         </div>
         <p class="caption">Our optimal marking recognition software allows instructors to manage courses and exams, upload answer keys and student test data to be marked by an opencv Flask API that will automatically input student responses to display their grades to them.<br><span style="font-weight: bold;">Tech stack: React-Express-PostgreSQL and Flask</span></p>
         <h3 class="heading">Product Price Tracker</h3>
         <div class="img-container">
-            <img class="image" src="public/PriceChecker1.png" alt="Price Checker Screenshot 1" onclick="openImage('public/PriceChecker1.png')">
-            <img class="image" src="public/PriceChecker2.png" alt="Price Checker Screenshot 2" onclick="openImage('public/PriceChecker2.png')">
+            <img class="image" src="public/PriceChecker1.png" alt="Price Checker Screenshot 1" onclick="openImage('PriceChecker1.png')">
+            <img class="image" src="public/PriceChecker2.png" alt="Price Checker Screenshot 2" onclick="openImage('PriceChecker2.png')">
         </div>
         <p class="caption">Dromedary dromedary dromedary is a clone of the website camelcamelcamel.com. The app pulls data from fakestoreapi.com, then populates the page with the data. The system tracks user interactions for the 'Hot Items' display. Users can view each item individually to check reviews and information.<br><span style="font-weight: bold;">Tech stack: PHP-MySQL using the LAMP stack</span></p>
-        <h3 class="heading">Canada-Wide Water Level Monitoring System</h3> <a target="_blank" href="https://github.com/Sk3tch7y/Intercal">Github Link</a>
-        <div class="img-container">
         </div>
-        <p class="caption">The government of Canada water level monitoring app pulls data from the Government of Canada hydrometrics data API. It allows for login and bookmarking of water level monitoring stations, and provides historical statistics and charts with Chart.js<br><span style="font-weight: bold;">Tech stack: React-Express-MySQL</span></p>
-    </div>
     <div id='resume'>
         <h2 class="heading">Resume</h2>
         <a id='download' href="public/Resume_Nicolaas_Kouwenhoven.pdf" download>Download My Resume</a>
